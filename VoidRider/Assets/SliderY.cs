@@ -1,28 +1,28 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class SliderY : MonoBehaviour
 {
-    [SerializeField] public Slider mySliderY;
-    [SerializeField] private float maxRot;
+[SerializeField] private float maxRot;
     [SerializeField] private Rigidbody cabin_Rigidbody;
     [SerializeField] private float valueChanged;
         
     
-    // Start is called before the first frame update
-    void Start()
+   
+
+    private void Update()
     {
-        mySliderY = GetComponent<Slider>();
-        if (mySliderY == null) Debug.Log("No Slider");
+        cabin_Rigidbody.transform.eulerAngles = new Vector3( cabin_Rigidbody.transform.eulerAngles.x,valueChanged,
+            cabin_Rigidbody.transform.eulerAngles.z) ;
     }
-        
+
     public void OnValueChanged(float value)
     {
         valueChanged = value * maxRot;
     
-        cabin_Rigidbody.transform.eulerAngles = new Vector3( cabin_Rigidbody.transform.eulerAngles.x,valueChanged,
-            cabin_Rigidbody.transform.eulerAngles.z) ;
+        
         
     }
 }

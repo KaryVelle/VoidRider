@@ -20,9 +20,9 @@ public class Speed : MonoBehaviour
     private void Update()
     {
         RelativeFwd = cabin_Rigidbody.transform.TransformDirection(Vector3.forward);
-        Debug.Log(RelativeFwd);
+        
         cabin_Rigidbody.velocity = RelativeFwd * speed * maxSpeed;
-        Debug.Log(speed);
+       
     }
 
 
