@@ -207,7 +207,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< Updated upstream
   - {fileID: 2100000, guid: 366ecd69d1c0f5347a71e95c3a5ba12c, type: 2}
+=======
+  - {fileID: 2100000, guid: 7dc289b24aaabac43b2b98a458065382, type: 2}
+>>>>>>> Stashed changes
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -842,6 +846,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301572666}
   m_CullTransparentMesh: 0
+<<<<<<< Updated upstream
 --- !u!1 &347131621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3386949039456503314, guid: ecb9e0f998ce8ee49ab763b3a7d84a27, type: 3}
@@ -884,6 +889,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &572960117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1937,6 +1944,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287234602}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 --- !u!1 &1519045447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5078219445013442983, guid: ecb9e0f998ce8ee49ab763b3a7d84a27, type: 3}
@@ -1958,6 +1966,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1632556874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,6 +2087,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< Updated upstream
 --- !u!1 &1658637291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6549729184533775942, guid: ecb9e0f998ce8ee49ab763b3a7d84a27, type: 3}
@@ -2098,6 +2109,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1726903307
 GameObject:
   m_ObjectHideFlags: 0
