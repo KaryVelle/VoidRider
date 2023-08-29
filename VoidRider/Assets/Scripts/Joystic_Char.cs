@@ -5,6 +5,7 @@ using UnityEngine;
 public class Joystic_Char : MonoBehaviour
 {
     public Transform parentObject;
+    public float direccion;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,12 @@ public class Joystic_Char : MonoBehaviour
 
         Vector3 clampedPosition = parentObject.TransformPoint(new Vector3(clampedX, clampedY, clampedZ));
         transform.position = clampedPosition;
+
+        if(transform.position.x<0)
+        {
+            direccion = (transform.localPosition.x * -1) / -parentSize.x;
+            Debug.Log("izquierda" + direccion);
+        }
 
     }
 }
