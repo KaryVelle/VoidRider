@@ -4,67 +4,117 @@ using UnityEngine;
 
 public class UpDownButton : MonoBehaviour
 {
-    [SerializeField] private bool upPressed;
-    [SerializeField] private bool downPressed;
-    [SerializeField] private Rigidbody cabin_Rigidbody;
-    [SerializeField] private float rotDegrees;
+    [SerializeField] public bool upPressed = false;
+    [SerializeField] public bool downPressed = false;
+    [SerializeField] public bool rightPressed = false;
+    [SerializeField] public bool leftPressed = false;
+   
+    [SerializeField] public Rigidbody cabin_Rigidbody;
+    [SerializeField] public float rotDegrees = 0.5f;
+
+    [SerializeField] public float newRot;
 
 
     // Update is called once per frame
     void Update()
     {
-        if (upPressed)
-        {
-            cabin_Rigidbody.transform.eulerAngles = new Vector3(cabin_Rigidbody.transform.eulerAngles.x + rotDegrees,
-                cabin_Rigidbody.transform.eulerAngles.y, cabin_Rigidbody.transform.eulerAngles.z);
-        }
-
-        if (upPressed!)
-        {
-            rotDegrees = 0;
-
-            cabin_Rigidbody.transform.eulerAngles = new Vector3(cabin_Rigidbody.transform.eulerAngles.x + rotDegrees,
-                cabin_Rigidbody.transform.eulerAngles.y, cabin_Rigidbody.transform.eulerAngles.z);
-
+       
+       
+            if (upPressed)
+            {
+               
+                cabin_Rigidbody.transform.eulerAngles = new Vector3(
+                    cabin_Rigidbody.transform.eulerAngles.x - rotDegrees,
+                    cabin_Rigidbody.transform.eulerAngles.y ,
+                    cabin_Rigidbody.transform.eulerAngles.z) ;
+            }
+            
             if (downPressed)
             {
+               
                 cabin_Rigidbody.transform.eulerAngles = new Vector3(
-                    cabin_Rigidbody.transform.eulerAngles.x - rotDegrees, cabin_Rigidbody.transform.eulerAngles.y,
-                    cabin_Rigidbody.transform.eulerAngles.z);
+                    cabin_Rigidbody.transform.eulerAngles.x + rotDegrees,
+                    cabin_Rigidbody.transform.eulerAngles.y ,
+                    cabin_Rigidbody.transform.eulerAngles.z) ;
             }
-            if (downPressed!)
+            
+            if (rightPressed)
             {
-                cabin_Rigidbody.transform.eulerAngles = new Vector3(cabin_Rigidbody.transform.eulerAngles.x,
-                    cabin_Rigidbody.transform.eulerAngles.y, cabin_Rigidbody.transform.eulerAngles.z);
-                rotDegrees = 0;
+               
+                cabin_Rigidbody.transform.eulerAngles = new Vector3(
+                    cabin_Rigidbody.transform.eulerAngles.x ,
+                    cabin_Rigidbody.transform.eulerAngles.y + rotDegrees ,
+                    cabin_Rigidbody.transform.eulerAngles.z) ;
             }
-        }
+            
+            if (leftPressed)
+            {
+               
+                cabin_Rigidbody.transform.eulerAngles = new Vector3(
+                    cabin_Rigidbody.transform.eulerAngles.x ,
+                    cabin_Rigidbody.transform.eulerAngles.y - rotDegrees ,
+                    cabin_Rigidbody.transform.eulerAngles.z) ;
+            }
+
+
+    }
+
+    public void UpNotPress()
+    {
+        
+        upPressed = false;
 
     }
     
-    void Up()
+    public void UpPressed()
     {
+       
         upPressed = true;
-
     }
-
-    void NotUp()
+    
+    public void DownNotPress()
     {
-        upPressed = false;
+        
+        downPressed = false;
 
     }
-
-    void Down()
+    
+    public void DownPressed()
     {
-        upPressed = true;
-
+        
+        downPressed = true;
     }
-
-    void NotDown()
+    
+    public void RightNotPress()
     {
-        upPressed = false;
+        
+        rightPressed = false;
 
     }
+    
+    public void RightPressed()
+    {
+       
+        rightPressed = true;
+    }
+    
+    public void LeftNotPress()
+    {
+        
+        leftPressed = false;
+
+    }
+    
+    public void LeftPressed()
+    {
+       
+        leftPressed = true;
+    }
+
+   
+
+  
+    
 }
    
 
