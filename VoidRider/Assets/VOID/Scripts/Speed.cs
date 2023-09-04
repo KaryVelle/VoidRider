@@ -9,8 +9,8 @@ public class Speed : MonoBehaviour
     [SerializeField] private Vector3 RelativeFwd;
     [SerializeField] private float speed;
 
-// Start is called before the first frame update
-    void Start()
+
+   void Start()
     {
         mySlider = GetComponent<Slider>();
         if (mySlider == null) Debug.Log("No Slider");
@@ -19,9 +19,9 @@ public class Speed : MonoBehaviour
     private void Update()
     {
         RelativeFwd = cabin_Rigidbody.transform.TransformDirection(Vector3.forward);
-        Debug.Log(RelativeFwd);
+        
         cabin_Rigidbody.velocity = RelativeFwd * speed * maxSpeed;
-        Debug.Log(speed);
+       
     }
 
 
