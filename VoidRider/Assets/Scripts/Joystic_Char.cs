@@ -17,7 +17,6 @@ public class Joystic_Char : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _inicialPocicion = transform.position;
         grabInteractable = GetComponent<XRGrabInteractable>();
         parentSize = parentObject.localScale;
     }
@@ -25,6 +24,7 @@ public class Joystic_Char : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //Debug.Log(transform.localPosition.x);
         Vector3 relativePosition = parentObject.InverseTransformPoint(transform.position);
 
@@ -46,7 +46,7 @@ public class Joystic_Char : MonoBehaviour
 
 
         if(grabInteractable.isSelected == false)
-            transform.position = _inicialPocicion;
+            transform.position = parentObject.position;
 
     }
 
