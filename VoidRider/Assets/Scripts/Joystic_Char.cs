@@ -34,8 +34,7 @@ public class Joystic_Char : MonoBehaviour
 
         if (transform.position.x != 0)
         {
-            direccion = ((transform.position.x *4) - -parentSize.x) / (parentSize.x - parentSize.x) * (globalPosition.x - globalPosition.y) + globalPosition.y;
-
+            direccion = (transform.position.x  - -parentSize.x) / (parentSize.x - parentSize.x) * (globalPosition.x - globalPosition.y) + globalPosition.y;
             Debug.Log(direccion);
         }
 
