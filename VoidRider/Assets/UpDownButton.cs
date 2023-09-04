@@ -11,8 +11,9 @@ public class UpDownButton : MonoBehaviour
    
     [SerializeField] public Rigidbody cabin_Rigidbody;
     [SerializeField] public float rotDegrees = 0.5f;
+    
+   
 
-    [SerializeField] public float newRot;
 
 
     // Update is called once per frame
@@ -27,6 +28,10 @@ public class UpDownButton : MonoBehaviour
                     cabin_Rigidbody.transform.eulerAngles.x - rotDegrees,
                     cabin_Rigidbody.transform.eulerAngles.y ,
                     cabin_Rigidbody.transform.eulerAngles.z) ;
+
+                
+
+                
             }
             
             if (downPressed)
@@ -55,6 +60,8 @@ public class UpDownButton : MonoBehaviour
                     cabin_Rigidbody.transform.eulerAngles.y - rotDegrees ,
                     cabin_Rigidbody.transform.eulerAngles.z) ;
             }
+            
+            
 
 
     }

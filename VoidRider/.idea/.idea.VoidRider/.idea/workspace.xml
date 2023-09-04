@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e24f4ee-5237-481a-bf97-6c9a2eb3cf3f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Materials/PrimitivesBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Materials/PrimitivesBlue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Materials/PrimitivesCoral.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Materials/PrimitivesCoral.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/PlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Speed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Scripts/Speed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Shaders/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Shaders/Metal.mat" afterDir="false" />
+    <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpDownButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpDownButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +15,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/MoveButtons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SliderX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SliderY.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Interaction/Interactables/XRSimpleInteractable.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
