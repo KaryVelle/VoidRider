@@ -11,11 +11,11 @@ public class Speed : MonoBehaviour
     [SerializeField] private float speed;
 
 // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
         mySlider = GetComponent<Slider>();
         if (mySlider == null) Debug.Log("No Slider");
-    }
+    }*/
 
     private void Update()
     {
