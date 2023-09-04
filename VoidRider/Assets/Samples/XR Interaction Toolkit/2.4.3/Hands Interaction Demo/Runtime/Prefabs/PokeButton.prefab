@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2130331530761912218}
   - component: {fileID: 2130331530761912221}
   - component: {fileID: 8348423061939033190}
-  - component: {fileID: 4662197743245715646}
   m_Layer: 0
   m_Name: PokeButton
   m_TagString: Untagged
@@ -181,21 +180,6 @@ MonoBehaviour:
   m_ApplyIfChildIsTarget: 1
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.01650002
---- !u!114 &4662197743245715646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130331530761912223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ef0c42033bb7a844924cef6a4afc656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upPressed: 0
-  cabin_Rigidbody: {fileID: 0}
-  rotDegrees: 0
 --- !u!1 &2130331531028021867
 GameObject:
   m_ObjectHideFlags: 0
