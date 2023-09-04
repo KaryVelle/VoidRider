@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Joystic_Char : MonoBehaviour
 {
     public Transform parentObject;
     public float direccion;
+    private XRGrabInteractable grabInteractable;
+    [SerializeField] private Vector2 globalPosition;
+
+    private Vector3 _inicialPocicion;
     // Start is called before the first frame update
     void Start()
     {
-
+        _inicialPocicion = transform.position;
+        grabInteractable = GetComponent<XRGrabInteractable>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(transform.localPosition.x);
         Vector3 parentSize = parentObject.localScale;
         Vector3 relativePosition = parentObject.InverseTransformPoint(transform.position);
 
@@ -25,11 +32,17 @@ public class Joystic_Char : MonoBehaviour
         Vector3 clampedPosition = parentObject.TransformPoint(new Vector3(clampedX, clampedY, clampedZ));
         transform.position = clampedPosition;
 
-        if(transform.position.x<0)
+        if (transform.position.x != 0)
         {
-            direccion = (transform.localPosition.x * -1) / -parentSize.x;
-            Debug.Log("izquierda" + direccion);
+            direccion = ((transform.position.x *4) - -parentSize.x) / (parentSize.x - parentSize.x) * (globalPosition.x - globalPosition.y) + globalPosition.y;
+
+            Debug.Log(direccion);
         }
 
+
+        if(grabInteractable.isSelected == false)
+            transform.position = _inicialPocicion;
+
     }
+
 }
