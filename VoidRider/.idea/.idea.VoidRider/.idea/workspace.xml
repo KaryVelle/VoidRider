@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpDownButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpDownButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/SliderX.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/SliderX.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e24f4ee-5237-481a-bf97-6c9a2eb3cf3f" name="Changes" comment="" />
+      <changelist id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="" />
       <created>1692739937703</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -85,6 +86,7 @@
       <workItem from="1693256863366" duration="5013000" />
       <workItem from="1693264368068" duration="7278000" />
       <workItem from="1693280348753" duration="597000" />
+      <workItem from="1693883444676" duration="4437000" />
     </task>
     <servers />
   </component>
