@@ -8,10 +8,10 @@ public class UpDownButton : MonoBehaviour
     [SerializeField] public bool downPressed = false;
     [SerializeField] public bool rightPressed = false;
     [SerializeField] public bool leftPressed = false;
-   
+    
     [SerializeField] public Rigidbody cabin_Rigidbody;
     [SerializeField] public float rotDegrees = 0.5f;
-    
+ 
    
 
 
@@ -117,11 +117,11 @@ public class UpDownButton : MonoBehaviour
        
         leftPressed = true;
     }
-
-   
-
-  
     
+    
+  
+
+
 }
    
 

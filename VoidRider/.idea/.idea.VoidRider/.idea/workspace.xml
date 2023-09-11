@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Prueba_Explosion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Prueba_Explosion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpDownButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpDownButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Speed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Scripts/Speed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/shoot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +106,7 @@
       <workItem from="1693883444676" duration="4848000" />
       <workItem from="1693950327435" duration="1557000" />
       <workItem from="1693952438427" duration="680000" />
+      <workItem from="1694467107840" duration="2899000" />
     </task>
     <servers />
   </component>

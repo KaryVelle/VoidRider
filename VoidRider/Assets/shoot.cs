@@ -40,7 +40,7 @@ public class shoot : MonoBehaviour
         GameObject bullet2= Instantiate(bulletPrefab, shootFrom2.position, Quaternion.Euler(0,0,0));
         rb2 = bullet2.GetComponent<Rigidbody>();
         rb2.AddForce(transform.forward * speed);
-        Destroy(bullet2, 3);
+        Destroy(bullet2, 10);
         
 
     }
