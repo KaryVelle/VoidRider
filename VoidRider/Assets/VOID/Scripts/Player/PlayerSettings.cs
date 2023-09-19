@@ -8,6 +8,6 @@ public abstract class PlayerSettings : MonoBehaviour
     public Rigidbody cabinRigidbody;
     public int maxSpeed;
     public float speed;
-    
+    public bool invertYAxis;
    
 }

@@ -58,7 +58,7 @@ public class UpDownButton : PlayerSettings
                         cabinRigidbody.transform.eulerAngles.y ,
                         cabinRigidbody.transform.eulerAngles.z) ;
                 }
-                    
+                
             }
             
             if (rightPressed)

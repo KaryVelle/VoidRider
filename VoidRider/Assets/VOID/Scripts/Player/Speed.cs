@@ -7,9 +7,8 @@ public class Speed : PlayerSettings
 {
     [SerializeField] private Slider mySlider;
     [SerializeField] private Vector3 relativeFwd;
-    
-    [SerializeField] private float turboMulti;
-    
+    public Turbo turbo;
+    public int turboMulti;
     
     
 
@@ -22,9 +21,19 @@ public class Speed : PlayerSettings
 
     private void Update()
     {
-        relativeFwd = cabinRigidbody.transform.TransformDirection(Vector3.forward);
+
+        if (turbo.isTurbo)
+        {
+            relativeFwd = cabinRigidbody.transform.TransformDirection(Vector3.forward);
         
-        cabinRigidbody.velocity = relativeFwd * speed * maxSpeed;
+            cabinRigidbody.velocity = relativeFwd * speed * maxSpeed * turboMulti;
+        }
+        else
+        {
+            relativeFwd = cabinRigidbody.transform.TransformDirection(Vector3.forward);
+        
+            cabinRigidbody.velocity = relativeFwd * speed * maxSpeed;
+        }
        
     }
 
@@ -35,6 +44,8 @@ public class Speed : PlayerSettings
         speed = value;
         
     }
+
+  
 
   
 
