@@ -43,7 +43,6 @@ public class EnemyToUSe : Enemy
                 isDestroy = true;
                 rbj2.AddForce(Vector3.one * speed, ForceMode.Impulse);
                 rbj1.AddForce((Vector3.one*-1 * speed), ForceMode.Impulse);
-                BalaPrefab.transform.rotation = shootPos1.rotation;
                 Instantiate(DestroyAnim, transform.position, transform.rotation);
                 StartCoroutine(Destruye());
             }
@@ -54,7 +53,8 @@ public class EnemyToUSe : Enemy
     private void Shot()
     {
         Fire = false;
-        Instantiate(BalaPrefab, shootPos1.position, (Quaternion.Euler(0, 0, 0)));
+        //BalaPrefab.transform.position = shootPos1.position;
+        Instantiate(BalaPrefab, shootPos1.position, shootPos1.rotation);
         StartCoroutine(DelayDeBala());
     }
 
