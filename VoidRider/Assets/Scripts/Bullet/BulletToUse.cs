@@ -20,7 +20,7 @@ public class BulletToUse : Bullet
 
     private void Update()
     {
-        RB.AddForce(transform.forward * Speed);
+        RB.AddForce(Vector3.forward * Speed);
         Destroy(gameObject, Range);
     }
 

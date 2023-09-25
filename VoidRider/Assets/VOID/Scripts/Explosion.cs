@@ -14,8 +14,6 @@ public class Explosion : MonoBehaviour
         Destroy(GetComponent<FixedJoint>());
         Instantiate(explosion, transform.position, transform.rotation);
         StartCoroutine(Destruye());
-
-
     }
 
     IEnumerator Destruye()

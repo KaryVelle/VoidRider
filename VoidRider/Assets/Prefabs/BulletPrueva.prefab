@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 341368707868609321}
   m_Layer: 0
   m_Name: BulletPrueva
-  m_TagString: Bullet
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
