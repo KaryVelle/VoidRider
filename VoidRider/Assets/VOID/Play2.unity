@@ -17234,7 +17234,7 @@ GameObject:
   - component: {fileID: 1514809778}
   - component: {fileID: 1514809782}
   m_Layer: 5
-  m_Name: Text Toggle
+  m_Name: InvertYAxis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
