@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Prefabs/XR Origin Hands (XR Rig).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Hands Interaction Demo/Runtime/Prefabs/XR Origin Hands (XR Rig).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.4.3/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Kenny Prueba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Kenny Prueba.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/MoveButtons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VOID/Scripts/Destroy_Particle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VOID/Scripts/Player/PlayerSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.4.3/Runtime/Inputs/XRInputModalityManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -108,9 +106,10 @@
       <workItem from="1693883444676" duration="4848000" />
       <workItem from="1693950327435" duration="1557000" />
       <workItem from="1693952438427" duration="680000" />
-      <workItem from="1695620676060" duration="3048000" />
-      <workItem from="1695676371081" duration="137000" />
-      <workItem from="1695678915902" duration="307000" />
+      <workItem from="1694467107840" duration="3144000" />
+      <workItem from="1695071955095" duration="4146000" />
+      <workItem from="1695157606557" duration="5033000" />
+      <workItem from="1695675608713" duration="2457000" />
     </task>
     <servers />
   </component>
