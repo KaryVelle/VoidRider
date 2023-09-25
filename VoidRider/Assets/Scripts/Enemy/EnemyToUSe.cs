@@ -16,12 +16,15 @@ public class EnemyToUSe : Enemy
             Shot();
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.transform.tag == "bullet")
+        if (other.transform.tag == "Bullet")
         {
+            Debug.LogWarning("quepedo");
+            HP -= Bala.Damage;
+            if (HP <= 0) Destroy(gameObject);
             //DestroyAnim.Play();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
