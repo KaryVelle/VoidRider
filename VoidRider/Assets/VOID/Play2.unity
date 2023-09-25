@@ -192,6 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51356251d0b7e7843b0aa29a777b3160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behavorController: {fileID: 0}
+  wander: {fileID: 0}
+  pursuit: {fileID: 0}
+  enemyToUSe: {fileID: 0}
   stering: {fileID: 4873751}
   target: {fileID: 1591570157}
   myState: 0
@@ -13640,6 +13644,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51356251d0b7e7843b0aa29a777b3160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behavorController: {fileID: 0}
+  wander: {fileID: 0}
+  pursuit: {fileID: 0}
+  enemyToUSe: {fileID: 0}
   stering: {fileID: 1144148603}
   target: {fileID: 1591570157}
   myState: 0
@@ -14675,7 +14683,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1257768497}
   - component: {fileID: 1257768500}
-  - component: {fileID: 1257768499}
   - component: {fileID: 1257768498}
   m_Layer: 0
   m_Name: R_side_cam
@@ -14732,14 +14739,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1257768499
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257768496}
-  m_Enabled: 1
 --- !u!20 &1257768500
 Camera:
   m_ObjectHideFlags: 0
@@ -16035,7 +16034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371214319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.02}
+  m_LocalPosition: {x: 0, y: 0, z: 6.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16953,11 +16952,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5d2085e0cba3c428cd495818c36407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 7
   DesiredVelocity: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   Position: {x: 0, y: 0, z: 0}
   Target: {x: 0, y: 0, z: 0}
+  enemyController: {fileID: 0}
+  enemyToUSe: {fileID: 0}
   T: 3
   pursuitTarget: {fileID: 1591570157}
   evade: 0
@@ -16975,7 +16976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behavors:
-  - {fileID: 1467454011}
+  - {fileID: 1467454015}
   maxSpeed: 20
   maxForce: 5
 --- !u!114 &1467454013
@@ -16990,6 +16991,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51356251d0b7e7843b0aa29a777b3160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behavorController: {fileID: 0}
+  wander: {fileID: 1467454015}
+  pursuit: {fileID: 1467454011}
+  enemyToUSe: {fileID: 0}
   stering: {fileID: 1467454011}
   target: {fileID: 1591570157}
   myState: 0
@@ -17029,6 +17034,10 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0, z: 0}
   Position: {x: 0, y: 0, z: 0}
   Target: {x: 0, y: 0, z: 0}
+  enemyController: {fileID: 0}
+  t_target: {fileID: 1591570159}
+  enemyToUSe: {fileID: 0}
+  distanceToPlayer: 0
   circleDistance: 20
   circleRadius: 10
   targetChange:
@@ -17115,6 +17124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51356251d0b7e7843b0aa29a777b3160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behavorController: {fileID: 0}
+  wander: {fileID: 0}
+  pursuit: {fileID: 0}
+  enemyToUSe: {fileID: 0}
   stering: {fileID: 1486913950}
   target: {fileID: 1591570157}
   myState: 0
@@ -18110,7 +18123,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1541593604}
   - component: {fileID: 1541593607}
-  - component: {fileID: 1541593606}
   - component: {fileID: 1541593605}
   m_Layer: 0
   m_Name: L_side_cam
@@ -18167,14 +18179,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1541593606
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541593603}
-  m_Enabled: 1
 --- !u!20 &1541593607
 Camera:
   m_ObjectHideFlags: 0
@@ -20361,6 +20365,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51356251d0b7e7843b0aa29a777b3160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behavorController: {fileID: 0}
+  wander: {fileID: 0}
+  pursuit: {fileID: 0}
+  enemyToUSe: {fileID: 0}
   stering: {fileID: 1774719320}
   target: {fileID: 1591570157}
   myState: 0
