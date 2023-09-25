@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Wander : Steering
 {
+    public EnemyController enemyController;
+    public Transform t_target;
+    [SerializeField] private EnemyToUSe enemyToUSe;
+    public float distanceToPlayer;
     public float circleDistance;
     public float circleRadius;
     public float[] targetChange = new float[] { 1f, 10f };
@@ -18,6 +22,8 @@ public class Wander : Steering
 
     private void Start()
     {
+        enemyController = GetComponent<EnemyController>();
+        enemyToUSe = GetComponent<EnemyToUSe>();
         _seek = GetComponent<Seek>();
         StartCoroutine(RandomTarget());
         StartCoroutine(RandomAngle());
@@ -37,6 +43,15 @@ public class Wander : Steering
         Quaternion lookRotation = Quaternion.LookRotation(direction * Time.deltaTime);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotSpeed); //lookRotation; //* Time.deltaTime; Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * velocidadRotacion)
         //DesiredVelocity = DesiredVelocity + _seek.DesiredVelocity;
+        distanceToPlayer = (t_target.position - transform.position).magnitude;
+        if(distanceToPlayer < 150f && enemyToUSe.HP > 5)
+        {
+            enemyController.myState = EnemyController.EnemyState.Pursuit;
+        }
+        else if(distanceToPlayer < 150f && enemyToUSe.HP < 5)
+        {
+            enemyController.myState = EnemyController.EnemyState.Evade;
+        }
         if (showVectors == true)
         {
             DrawVectors(circleCenter, displesment);

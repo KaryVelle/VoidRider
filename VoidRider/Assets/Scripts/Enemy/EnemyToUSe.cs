@@ -11,9 +11,11 @@ public class EnemyToUSe : Enemy
     [SerializeField] private float rotSpeed;
     [SerializeField] private bool isDestroy = false;
     private BoxCollider _bc;
+    private Coroutine shotDelay;
 
     private void Start()
     {
+        Fire = false;
         Bala = BalaPrefab.GetComponent<BulletToUse>();
         _bc = GetComponent<BoxCollider>();
     }
@@ -43,7 +45,6 @@ public class EnemyToUSe : Enemy
                 isDestroy = true;
                 rbj2.AddForce(Vector3.one * speed, ForceMode.Impulse);
                 rbj1.AddForce((Vector3.one*-1 * speed), ForceMode.Impulse);
-                BalaPrefab.transform.rotation = shootPos1.rotation;
                 Instantiate(DestroyAnim, transform.position, transform.rotation);
                 StartCoroutine(Destruye());
             }
@@ -54,14 +55,18 @@ public class EnemyToUSe : Enemy
     private void Shot()
     {
         Fire = false;
-        Instantiate(BalaPrefab, shootPos1.position, (Quaternion.Euler(0, 0, 0)));
-        StartCoroutine(DelayDeBala());
+        //BalaPrefab.transform.position = shootPos1.position;
+        if(shotDelay == null)
+        {
+            Instantiate(BalaPrefab, shootPos1.position, shootPos1.rotation);
+            shotDelay = StartCoroutine(DelayDeBala());
+        }
     }
 
     IEnumerator DelayDeBala()
     {
         yield return new WaitForSeconds(Delay);
-        Fire = true;
+        shotDelay = null;
     }
 
     IEnumerator Destruye()
