@@ -12,9 +12,10 @@ public class BulletToUse : Bullet
         RB = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);    
+        if(other.tag =="Enemy")
+        Destroy(gameObject);
     }
 
     private void Update()
