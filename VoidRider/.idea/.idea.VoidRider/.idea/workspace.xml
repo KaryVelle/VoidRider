@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/shoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/shoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Behavors/Pursuit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Behavors/Pursuit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Behavors/Wander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Behavors/Wander.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/EnemyController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +111,7 @@
       <workItem from="1695157606557" duration="5033000" />
       <workItem from="1695675608713" duration="2457000" />
       <workItem from="1695678585195" duration="1172000" />
+      <workItem from="1695770344137" duration="597000" />
     </task>
     <servers />
   </component>
