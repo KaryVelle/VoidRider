@@ -1477,7 +1477,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &109162540
 MonoBehaviour:
@@ -1831,7 +1831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &134100099
 Transform:
   m_ObjectHideFlags: 0
@@ -3428,7 +3428,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246971301
 GameObject:
@@ -4587,7 +4587,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &349558881 stripped
 GameObject:
@@ -4833,8 +4833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d10e84c51a1be4fb3c63a7c976f8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1534905087}
-  bulletPrefab2: {fileID: 1534905087}
+  bulletPrefab: {fileID: 1624254412}
+  bulletPrefab2: {fileID: 1624254412}
   shootFrom1: {fileID: 635761124}
   shootFrom2: {fileID: 1609464325}
   shootFromBack1: {fileID: 1497100937}
@@ -5460,8 +5460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d10e84c51a1be4fb3c63a7c976f8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1534905087}
-  bulletPrefab2: {fileID: 0}
+  bulletPrefab: {fileID: 1624254412}
+  bulletPrefab2: {fileID: 1624254412}
   shootFrom1: {fileID: 635761124}
   shootFrom2: {fileID: 1609464325}
   shootFromBack1: {fileID: 0}
@@ -14977,7 +14977,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257768496
 GameObject:
@@ -16344,8 +16344,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1467454007}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373737837
 GameObject:
@@ -17389,7 +17389,7 @@ Transform:
   - {fileID: 428137705}
   - {fileID: 1810090028}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508299979
 GameObject:
@@ -18191,7 +18191,7 @@ Transform:
   - {fileID: 1873794180}
   - {fileID: 2038839811}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1593320563 stripped
 Transform:
@@ -18622,6 +18622,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616781115}
   m_CullTransparentMesh: 0
+--- !u!1 &1624254412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 122063940692954883, guid: 6ca33f017ce6af74f8a78de185ea2ba6, type: 3}
+  m_PrefabInstance: {fileID: 558082538616908310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1632272394
 GameObject:
   m_ObjectHideFlags: 0
@@ -21188,7 +21193,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860270703
 GameObject:
