@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyToUSe : Enemy
 {
     [SerializeField] private FixedJoint joint;
+    [SerializeField] private FixedJoint joint2;
     [SerializeField] private Rigidbody rbj1;
     [SerializeField] private Rigidbody rbj2;
     [SerializeField] private float speed;
@@ -41,6 +42,7 @@ public class EnemyToUSe : Enemy
             if (HP <= 0)
             {
                 Destroy(joint);
+                Destroy(joint2);
                 _bc.enabled = false;
                 isDestroy = true;
                 rbj2.AddForce(Vector3.one * speed, ForceMode.Impulse);
