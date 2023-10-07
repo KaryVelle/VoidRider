@@ -4703,8 +4703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d10e84c51a1be4fb3c63a7c976f8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1534905087}
-  bulletPrefab2: {fileID: 1534905087}
+  bulletPrefab: {fileID: 0}
+  bulletPrefab2: {fileID: 0}
   shootFrom1: {fileID: 635761124}
   shootFrom2: {fileID: 1609464325}
   shootFromBack1: {fileID: 1497100937}
@@ -21851,7 +21851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2416178114162288478, guid: 406194a700f813f4e8845168b762ee51, type: 3}
-  desiredEnemys: 30
+  desiredEnemys: 15
   separtionRadious: 0
   enemies: []
 --- !u!4 &1918517392

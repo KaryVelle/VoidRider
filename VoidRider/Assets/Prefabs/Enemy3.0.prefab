@@ -99,7 +99,7 @@ MonoBehaviour:
   pursuit: {fileID: 0}
   enemyToUSe: {fileID: 0}
   stering: {fileID: 2416178115134703054}
-  target: {fileID: 919132149155446097, guid: bdc547e504316fa489e9d28c0d0b65ff, type: 3}
+  target: {fileID: 0}
   myState: 0
 --- !u!114 &2416178115134703054
 MonoBehaviour:
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5d2085e0cba3c428cd495818c36407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 13
   DesiredVelocity: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   Position: {x: 0, y: 0, z: 0}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behavors:
   - {fileID: 2416178115134703052}
-  maxSpeed: 5
+  maxSpeed: 20
   maxForce: 5
 --- !u!114 &2416178115134703052
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec968f9e4af88e46be7a47df8e59df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   DesiredVelocity: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   Position: {x: 0, y: 0, z: 0}
@@ -164,20 +164,20 @@ MonoBehaviour:
   circleDistance: 0
   circleRadius: 0
   targetChange:
-  - 1
-  - 10
+  - 20
+  - 30
   targetSpace:
   - 500
   - 500
   - 500
   angleChange:
-  - 1
+  - 10
   - 20
   angleRange:
-  - -45
-  - 45
+  - -35
+  - 35
   showVectors: 1
-  rotSpeed: 3
+  rotSpeed: 2
 --- !u!114 &2416178115134703053
 MonoBehaviour:
   m_ObjectHideFlags: 0

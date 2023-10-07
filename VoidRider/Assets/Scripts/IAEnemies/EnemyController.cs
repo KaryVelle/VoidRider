@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = FindObjectOfType<PlayerController>().gameObject;
         behavorController = GetComponent<BehavorController>();
         pursuit = GetComponent<Pursuit>();
         wander = GetComponent<Wander>();

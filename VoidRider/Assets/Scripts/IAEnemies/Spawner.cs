@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject enemy;
     [SerializeField] private int desiredEnemys;
     [SerializeField] private float separtionRadious;
-    private int[] positions = new int[] { 600, 600, 600 };
+    private int[] positions = new int[] { 300, 300, 300 };
     public List<GameObject> enemies;
     // Start is called before the first frame update
     void Start()
