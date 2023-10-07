@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public Vector3 target;
-    public Seek seek;
-
-    public Vector3 velocity = Vector3.zero;
-
-    private void FixedUpdate()
+    [SerializeField] private float hp;
+    private void OnTriggerEnter(Collider other)
     {
-        Vector3 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        target = new Vector3(mouseTarget.x, mouseTarget.y, 0.0f);
-        seek.Target = target;
+        if(other.tag == "EnemyBullet")
+        {
+            BulletToUse damage = other.GetComponent<BulletToUse>();
+            hp -= damage.Damage;
+        }
+        if(hp <=0)
+        {
+            SceneManager.LoadScene("Play2");
+        }
     }
 }

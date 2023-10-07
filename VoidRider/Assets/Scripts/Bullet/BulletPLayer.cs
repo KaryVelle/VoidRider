@@ -1,11 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 
-public class BulletToUse : Bullet
+public class BulletPLayer : Bullet
 {
     private void Start()
     {
@@ -14,8 +11,8 @@ public class BulletToUse : Bullet
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag =="Player")
-        Destroy(gameObject);
+        if (other.tag == "Enemy")
+            Destroy(gameObject);
     }
 
     private void Update()
@@ -23,5 +20,4 @@ public class BulletToUse : Bullet
         RB.AddForce(transform.forward * Speed);
         Destroy(gameObject, Range);
     }
-
 }
