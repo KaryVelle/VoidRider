@@ -18,6 +18,8 @@ public class Pursuit : Steering
     // Start is called before the first frame update
     void Start()
     {
+        pursuitTarget = FindObjectOfType<PlayerController>().gameObject;
+        _pController = pursuitTarget.GetComponent<Rigidbody>();
         enemyController = GetComponent<EnemyController>();
         enemyToUSe = GetComponent<EnemyToUSe>();
     }

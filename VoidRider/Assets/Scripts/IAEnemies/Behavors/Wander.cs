@@ -22,6 +22,7 @@ public class Wander : Steering
 
     private void Start()
     {
+        t_target = FindObjectOfType<PlayerController>().gameObject.transform;
         enemyController = GetComponent<EnemyController>();
         enemyToUSe = GetComponent<EnemyToUSe>();
         _seek = GetComponent<Seek>();
