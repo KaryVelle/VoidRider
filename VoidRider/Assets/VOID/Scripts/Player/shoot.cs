@@ -9,7 +9,6 @@ public class shoot : MonoBehaviour
 {
 
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private GameObject bulletPrefab2;
     [SerializeField] private Transform shootFrom1;
     [SerializeField] private Transform shootFrom2;
     
@@ -20,10 +19,11 @@ public class shoot : MonoBehaviour
     
     private Rigidbody rb1;
     private Rigidbody rb2;
- 
-    public int destroyBulletTime1 = 10;
-    public int destroyBulletTime2 = 10;
+    private Rigidbody rb3;
+    private Rigidbody rb4;
     public int destroyBulletTime3 = 10;
+
+    public AudioSource sound;
 
   
 
@@ -38,38 +38,24 @@ public class shoot : MonoBehaviour
         rb2 = bullet2.GetComponent<Rigidbody>();
         rb2.AddForce(transform.forward * speed * shootMulti);
         Destroy(bullet2, destroyBulletTime3);
+        sound.Play();
 
-        
-
-    }
-    
-    public void Shoot2()
-    {
-        GameObject bullet1= Instantiate(bulletPrefab2, shootFrom1.position, shootFrom1.rotation);
-        rb1 = bullet1.GetComponent<Rigidbody>();
-        rb1.AddForce(transform.forward * speed * shootMulti);
-        Destroy(bullet1, destroyBulletTime2);
-        
-        GameObject bullet2= Instantiate(bulletPrefab2, shootFrom2.position, shootFrom2.rotation);
-        rb2 = bullet2.GetComponent<Rigidbody>();
-        rb2.AddForce(transform.forward * speed * shootMulti);
-        Destroy(bullet2, destroyBulletTime2);
         
 
     }
     
     public void Shoot3()
     {
-        GameObject bullet1= Instantiate(bulletPrefab, shootFromBack1.position, shootFrom1.rotation);
-        rb1 = bullet1.GetComponent<Rigidbody>();
-        rb1.AddForce(transform.forward * speed * -1 * shootMulti);
-        Destroy(bullet1, destroyBulletTime3);
+        GameObject bullet3= Instantiate(bulletPrefab, shootFromBack1.position, shootFrom1.rotation);
+        rb3 = bullet3.GetComponent<Rigidbody>();
+        rb3.AddForce(transform.forward * speed * shootMulti);
+        Destroy(bullet3, destroyBulletTime3);
         
-        GameObject bullet2= Instantiate(bulletPrefab, shootFromBack2.position, shootFrom2.rotation);
-        rb2 = bullet2.GetComponent<Rigidbody>();
-        rb2.AddForce(transform.forward * speed * -1 * shootMulti);
-        Destroy(bullet2, destroyBulletTime3);
-        
+        GameObject bullet4= Instantiate(bulletPrefab, shootFromBack2.position, shootFrom2.rotation);
+        rb4 = bullet4.GetComponent<Rigidbody>();
+        rb4.AddForce(transform.forward * speed * shootMulti);
+        Destroy(bullet4, destroyBulletTime3);
+        sound.Play();
     }
  
 }
