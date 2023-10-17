@@ -23,17 +23,19 @@ public class UpDownButton : PlayerSettings
             {
                 if (upDownChanger.invertYAxis)
                 {
-                    cabinRigidbody.transform.eulerAngles = new Vector3(
-                        cabinRigidbody.transform.eulerAngles.x + rotDegrees,
-                        cabinRigidbody.transform.eulerAngles.y ,
-                        cabinRigidbody.transform.eulerAngles.z) ;
+                    Vector3 targetRot = new Vector3(
+                        rotDegrees,
+                        0,
+                        0);
+                    cabinRigidbody.transform.Rotate(targetRot);
                 }
                 else
                 {
-                    cabinRigidbody.transform.eulerAngles = new Vector3(
-                        cabinRigidbody.transform.eulerAngles.x - rotDegrees,
-                        cabinRigidbody.transform.eulerAngles.y ,
-                        cabinRigidbody.transform.eulerAngles.z) ;
+                    Vector3 targetRot = new Vector3(
+                        -rotDegrees,
+                        0,
+                        0);
+                    cabinRigidbody.transform.Rotate(targetRot);
                 }
                    
 
@@ -46,37 +48,41 @@ public class UpDownButton : PlayerSettings
             {
                 if (upDownChanger.invertYAxis)
                 {
-                    cabinRigidbody.transform.eulerAngles = new Vector3(
-                        cabinRigidbody.transform.eulerAngles.x - rotDegrees,
-                        cabinRigidbody.transform.eulerAngles.y ,
-                        cabinRigidbody.transform.eulerAngles.z) ;
+                    Vector3 targetRot = new Vector3(
+                        -rotDegrees,
+                        0,
+                        0);
+                    cabinRigidbody.transform.Rotate(targetRot);
                 }
                 else
                 {
-                    cabinRigidbody.transform.eulerAngles = new Vector3(
-                        cabinRigidbody.transform.eulerAngles.x + rotDegrees,
-                        cabinRigidbody.transform.eulerAngles.y ,
-                        cabinRigidbody.transform.eulerAngles.z) ;
+                    Vector3 targetRot = new Vector3(
+                        rotDegrees,
+                        0,
+                        0);
+                    cabinRigidbody.transform.Rotate(targetRot);
                 }
                 
             }
             
             if (rightPressed)
             {
+                Vector3 targetRot = new Vector3(
+                    0,
+                    rotDegrees,
+                    0);
+                cabinRigidbody.transform.Rotate(targetRot);
                
-                cabinRigidbody.transform.eulerAngles = new Vector3(
-                    cabinRigidbody.transform.eulerAngles.x ,
-                    cabinRigidbody.transform.eulerAngles.y + rotDegrees ,
-                    cabinRigidbody.transform.eulerAngles.z) ;
             }
             
             if (leftPressed)
             {
+                Vector3 targetRot = new Vector3(
+                    0,
+                    -rotDegrees,
+                    0);
+                cabinRigidbody.transform.Rotate(targetRot);
                
-                cabinRigidbody.transform.eulerAngles = new Vector3(
-                    cabinRigidbody.transform.eulerAngles.x ,
-                    cabinRigidbody.transform.eulerAngles.y - rotDegrees ,
-                    cabinRigidbody.transform.eulerAngles.z) ;
             }
             
             
