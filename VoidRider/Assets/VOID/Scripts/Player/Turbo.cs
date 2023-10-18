@@ -1,21 +1,22 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class Turbo : PlayerSettings
+public class Turbo : MonoBehaviour
 {
-    public int turboTimer = 5;
+    public ParticleSystem warp;
+    public ParticleSystem warp2;
     public bool isTurbo;
     private Coroutine corTurbo;
+    public Transform target;
+
+    void Start()
+    {
+        warp.Stop();
+        warp2.Stop();
+    }
+
     public void TurboPressed()
     {
-        /*if (corTurbo != null)
-        {
-            StopCoroutine(corTurbo);
-        }
-        corTurbo = StartCoroutine(TurboWait());*/
         if (corTurbo == null)
         {
             corTurbo = StartCoroutine(TurboWait());
@@ -25,8 +26,17 @@ public class Turbo : PlayerSettings
     public IEnumerator TurboWait()
     {
         isTurbo = true;
+        
+        warp.Play();
+        warp2.Play();
+
         yield return new WaitForSeconds(5);
         isTurbo = false;
+        
+        warp.Stop();
+        warp2.Stop();
+
         corTurbo = null;
     }
+    
 }
