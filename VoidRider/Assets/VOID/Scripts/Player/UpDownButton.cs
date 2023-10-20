@@ -37,10 +37,6 @@ public class UpDownButton : PlayerSettings
                         0);
                     cabinRigidbody.transform.Rotate(targetRot);
                 }
-                   
-
-                
-
                 
             }
             
