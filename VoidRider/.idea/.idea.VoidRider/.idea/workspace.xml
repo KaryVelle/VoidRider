@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletPruebaAtras.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletPruebaAtras.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/Spawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Shaders/Materials/CamDown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Shaders/Materials/CamDown.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/Shaders/Materials/CamUp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Shaders/Materials/CamUp.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -8,11 +8,13 @@ public class Turbo : MonoBehaviour
     public bool isTurbo;
     private Coroutine corTurbo;
     public Transform target;
+    public AudioSource sfx;
 
     void Start()
     {
         warp.Stop();
         warp2.Stop();
+        sfx.time = 9f;
     }
 
     public void TurboPressed()
@@ -20,6 +22,7 @@ public class Turbo : MonoBehaviour
         if (corTurbo == null)
         {
             corTurbo = StartCoroutine(TurboWait());
+            sfx.Play();
         }
     }
 
