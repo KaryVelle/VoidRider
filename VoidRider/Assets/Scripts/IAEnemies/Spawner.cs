@@ -1,32 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
     [SerializeField] private int desiredEnemys;
-    [SerializeField] private float separtionRadious;
-    private int[] positions = new int[] { 300, 300, 300 };
+    private int[] positions = new int[] { 8000, 8000, 8000 };
     public List<GameObject> enemies;
-    // Start is called before the first frame update
+    public EnemyCounter EnemyCounter;
     void Start()
     {
         Generator();
+        EnemyCounter.numberOfEnemies = enemies.Count;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void Generator()
     {
         for(int i =0; i < desiredEnemys; i++)
         {
             GameObject a = Instantiate(enemy) as GameObject;
-            a.transform.position = new Vector3(Random.Range(-positions[0], positions[0]), Random.Range(-positions[1], positions[1]), Random.Range(-positions[2], positions[2]));
+            a.transform.position = new Vector3(Random.Range(-positions[0], positions[0]), 
+                Random.Range(-positions[1], positions[1]), 
+                Random.Range(-positions[2], positions[2]));
             enemies.Add(a);
         }
     }

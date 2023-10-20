@@ -37,7 +37,7 @@ public class EnemyToUSe : Enemy
     {
         if (other.transform.tag == "PlayerBullet")
         {
-            Debug.LogWarning("quepedo");
+           //Debug.LogWarning("quepedo");
             HP -= Bala.Damage;
             if (HP <= 0)
             {

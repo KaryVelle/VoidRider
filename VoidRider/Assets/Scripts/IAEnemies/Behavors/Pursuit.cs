@@ -79,19 +79,15 @@ public class Pursuit : Steering
 
     IEnumerator DelayScape()
     {
-        Debug.Log("AntesESC");
         yield return new WaitForSeconds(5f);
         enemyController.myState = EnemyController.EnemyState.Idle;
-        Debug.Log("DespuesESC");
         corScape = null;
     } 
     
     IEnumerator DelayProximity()
     {
-        Debug.Log("Antes");
         yield return new WaitForSeconds(2f);
         enemyController.myState = EnemyController.EnemyState.Pursuit;
-        Debug.Log("Despues");
         corProxy = null;
     }
 
