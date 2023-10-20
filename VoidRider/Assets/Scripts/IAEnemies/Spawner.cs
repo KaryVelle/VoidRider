@@ -1,23 +1,17 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
     [SerializeField] private int desiredEnemys;
-    private int[] positions = new int[] { 8000, 8000, 8000 };
+    private int[] positions = new int[] { 800, 800, 800 };
     public List<GameObject> enemies;
-    public EnemyCounter EnemyCounter;
     void Start()
     {
         Generator();
-        EnemyCounter.numberOfEnemies = enemies.Count;
     }
-    
 
     public void Generator()
     {
