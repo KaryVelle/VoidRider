@@ -13,6 +13,7 @@ public class EnemyToUSe : Enemy
     [SerializeField] private bool isDestroy = false;
     private BoxCollider _bc;
     private Coroutine shotDelay;
+    public AudioSource audioDestroy;
 
     private void Start()
     {
@@ -48,6 +49,7 @@ public class EnemyToUSe : Enemy
                 rbj2.AddForce(Vector3.one * speed, ForceMode.Impulse);
                 rbj1.AddForce((Vector3.one*-1 * speed), ForceMode.Impulse);
                 Instantiate(DestroyAnim, transform.position, transform.rotation);
+                audioDestroy.Play();
                 StartCoroutine(Destruye());
             }
 
@@ -74,8 +76,10 @@ public class EnemyToUSe : Enemy
     IEnumerator Destruye()
     {
         yield return new WaitForSeconds(3);
+       
         Instantiate(DestroyAnim, transform.position, transform.rotation);
         Destroy(joint);
         Destroy(gameObject);
+        audioDestroy.Play();
     }
 }

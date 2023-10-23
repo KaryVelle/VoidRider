@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="" />
+    <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,6 +146,7 @@
       <workItem from="1697651405725" duration="5651000" />
       <workItem from="1697742505052" duration="2184000" />
       <workItem from="1697778411075" duration="10658000" />
+      <workItem from="1698019773814" duration="1712000" />
     </task>
     <servers />
   </component>
