@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.0.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyToUSe.cs" afterDir="false" />
@@ -13,6 +14,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAEnemies/PlayerController.cs" afterDir="false" />
 >>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Assets/VOID/Play2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Play2.unity" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/3dModels/Materials/Meteoritos-Material #3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/3dModels/Materials/Meteoritos-Material #3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VOID/Planets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Planets.unity" afterDir="false" />
+>>>>>>> origin/NewKenny
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +28,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CamToggle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DamageControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EnemyCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/HpBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MotionBlur.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NumberofEnemies.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Pausa.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Playlist.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VOID/Scripts/Player/PlayerSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VOID/Scripts/Player/Turbo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/WorldCenterOfMass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.0/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Editor/Camera/UniversalRenderPipelineSerializedCamera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
@@ -68,9 +63,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\www\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\www\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\www\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\alcan\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\alcan\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\alcan\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -151,10 +146,17 @@
 <<<<<<< Updated upstream
       <workItem from="1697742505052" duration="2184000" />
       <workItem from="1697778411075" duration="10658000" />
+<<<<<<< HEAD
       <workItem from="1698019773814" duration="1712000" />
 =======
       <workItem from="1697742505052" duration="2765000" />
 >>>>>>> Stashed changes
+=======
+      <workItem from="1698091111704" duration="5000" />
+      <workItem from="1698098149479" duration="1066000" />
+      <workItem from="1698177970353" duration="606000" />
+      <workItem from="1698182113766" duration="593000" />
+>>>>>>> origin/NewKenny
     </task>
     <servers />
   </component>
