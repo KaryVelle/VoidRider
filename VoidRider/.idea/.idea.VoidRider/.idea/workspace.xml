@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0927518f-dbc6-4296-9db1-b687baba1b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoidRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VOID/3dModels/Materials/Meteoritos-Material #3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/3dModels/Materials/Meteoritos-Material #3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoonRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoonRotate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VOID/Planets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VOID/Planets.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +138,7 @@
       <workItem from="1698091111704" duration="5000" />
       <workItem from="1698098149479" duration="1066000" />
       <workItem from="1698177970353" duration="606000" />
-      <workItem from="1698182113766" duration="593000" />
+      <workItem from="1698182113766" duration="1159000" />
     </task>
     <servers />
   </component>
