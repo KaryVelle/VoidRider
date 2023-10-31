@@ -10,6 +10,6 @@ public class MoonRotate : MonoBehaviour
 
     void Update()
     {
-        transform.RotateAround(target.transform.position, Vector3.left,  rotSpeed*Time.deltaTime);
+        transform.RotateAround(target.transform.position, Vector3.up,  rotSpeed*Time.deltaTime);
     }
 }
