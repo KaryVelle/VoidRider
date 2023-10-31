@@ -1,26 +1,22 @@
-
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
 
-public class MovementTutorial : MonoBehaviour
+public class ShootTutorial : MonoBehaviour
 {
-    public GameObject nextAro;
-    public bool aroFinal;
-    public bool primeraro;
-    public bool segundoAro;
-    public bool tercerAro;
-    public GameObject finger;
-    public GameObject movementUI;
-    public GameObject upDownButtons;
-    public GameObject turbo;
-    public Text instructions;
+    public GameObject firstEnemy;
+    public GameObject secondEnemy;
+    public GameObject thirdEnemy;
 
+    public GameObject lastEnemies;
     // Propiedades para la animación del texto
     public float delayBetweenCharacters = 0.1f;
     public AudioSource audioSource;
     public AudioClip typingSound;
+    public Text instructions;
 
     private string fullText;
     private StringBuilder currentText;
@@ -29,8 +25,7 @@ public class MovementTutorial : MonoBehaviour
 
     private void Start()
     {
-        nextAro.SetActive(true);
-
+        
         // Configuración inicial de animación de texto
         fullText = instructions.text;
         instructions.text = "";
@@ -46,42 +41,29 @@ public class MovementTutorial : MonoBehaviour
 
     private void Update()
     {
-        // Puedes agregar lógica aquí si necesitas detener la animación de texto antes de que termine.
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (firstEnemy == null)
         {
-            nextAro.SetActive(true);
-
-            if (primeraro)
-            {
-                StartTextAnimation("¡Bien!\nAhora usa los botones para moverte hacia los lados.");
-                finger.SetActive(false);
-                movementUI.SetActive(true);
-            }
-
-            if (segundoAro)
-            {
-                StartTextAnimation("¡Muy Bien!\nAhora usa los botones para subir y bajar");
-                upDownButtons.SetActive(true);
-            }
-
-            if (tercerAro)
-            {
-                StartTextAnimation("¡Wow!\nAhora usa el botón debajo del slider.\nEse es tu turbo!");
-                turbo.SetActive(true);
-            }
-
-            if (aroFinal)
-            {
-                StartTextAnimation("¡Excelente!\nAhora sabes navegar por el espacio.\nSigamos con tu entrenamiento");
-                Debug.Log("fin");
-            }
+            StartTextAnimation("¡Eso!\n¡Ahora hay uno justo detras tuyo!\nUsa tus retrovisores y el botón de disparo hacia atrás. ");
+            secondEnemy.SetActive(true);
+        }
+        
+        if (secondEnemy == null)
+        {
+            StartTextAnimation("¡Wow!\nSé que puedes con más, navega hasta el siguiente enemigo y destrúyelo.");
+            thirdEnemy.SetActive(true);
+        }
+        if (thirdEnemy == null)
+        { 
+            StartTextAnimation("¡Ey!\n¡Vamos por ellos antes de que nuestra vida baje a 0!");
+            lastEnemies.SetActive(true);
+        }
+        if (lastEnemies== null)
+        { 
+            StartTextAnimation("¡Eso cadete!\n¡Estas listx para embarcarte en esta peligrosa misión...!");
+            lastEnemies.SetActive(true);
         }
     }
-
+    
     private void StartTextAnimation(string text)
     {
         if (typingCoroutine != null)
