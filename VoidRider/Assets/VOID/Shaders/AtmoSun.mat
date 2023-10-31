@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Atmo
+  m_Name: AtmoSun
   m_Shader: {fileID: -6465566751694194690, guid: d07fe019735428b46b6a354ea0a88354, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,11 +36,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _atmosSize: 10.8
+    - _atmosSize: 7.07
     m_Colors:
-    - _Color: {r: 1, g: 0.6062049, b: 0.514151, a: 0}
+    - _Color: {r: 0.16301486, g: 0.13570347, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &383662125228930490
+--- !u!114 &5691096013959177923
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
