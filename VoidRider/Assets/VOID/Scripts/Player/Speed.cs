@@ -12,6 +12,8 @@ public class Speed : PlayerSettings
    
     public ParticleSystem fast;
     public ParticleSystem faster;
+    public ParticleSystem motores;
+    public ParticleSystem motores2;
     
     
 
@@ -51,11 +53,19 @@ public class Speed : PlayerSettings
             faster.Play();
         }
 
-        if (speed==0)
+        if (speed<=0.2f)
         {
             turbo.isTurbo = false;
             fast.Stop();
             faster.Stop();
+            motores.Stop();
+            motores2.Stop();
+        }
+
+        if (speed>0.2f)
+        {
+            motores.Play();
+            motores2.Play();
         }
        
     }
