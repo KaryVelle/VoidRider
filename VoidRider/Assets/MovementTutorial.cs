@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class MovementTutorial : MonoBehaviour
 {
@@ -78,6 +79,7 @@ public class MovementTutorial : MonoBehaviour
             {
                 StartTextAnimation("¡Excelente!\nAhora sabes navegar por el espacio.\nSigamos con tu entrenamiento");
                 Debug.Log("fin");
+                StartCoroutine(DelaySceneChange());
             }
         }
     }
@@ -116,5 +118,11 @@ public class MovementTutorial : MonoBehaviour
         {
             audioSource.Stop();
         }
+    }
+
+    private IEnumerator DelaySceneChange()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(0);
     }
 }
