@@ -2364,6 +2364,7 @@ MonoBehaviour:
   delayBetweenCharacters: 0.1
   audioSource: {fileID: 134156204}
   typingSound: {fileID: 8300000, guid: 29a83604111a3724da85f01f3d079c9d, type: 3}
+  velocity: {fileID: 1739808421}
 --- !u!135 &113957648
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5708,6 +5709,7 @@ MonoBehaviour:
   delayBetweenCharacters: 0.1
   audioSource: {fileID: 134156204}
   typingSound: {fileID: 8300000, guid: 29a83604111a3724da85f01f3d079c9d, type: 3}
+  velocity: {fileID: 0}
 --- !u!135 &309772351
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15109,6 +15111,7 @@ MonoBehaviour:
   delayBetweenCharacters: 0.1
   audioSource: {fileID: 134156204}
   typingSound: {fileID: 8300000, guid: 29a83604111a3724da85f01f3d079c9d, type: 3}
+  velocity: {fileID: 1739808421}
 --- !u!135 &911198549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24457,7 +24460,7 @@ BoxCollider:
   m_GameObject: {fileID: 1591570157}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 7.032419, y: 4.259487, z: 13.031471}
   m_Center: {x: 0.23207176, y: -0.42486334, z: 1.2766294}
@@ -26774,6 +26777,7 @@ MonoBehaviour:
   delayBetweenCharacters: 0.1
   audioSource: {fileID: 134156204}
   typingSound: {fileID: 8300000, guid: 29a83604111a3724da85f01f3d079c9d, type: 3}
+  velocity: {fileID: 0}
 --- !u!135 &1731292848
 SphereCollider:
   m_ObjectHideFlags: 0

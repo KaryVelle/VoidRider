@@ -28,6 +28,8 @@ public class MovementTutorial : MonoBehaviour
 
     private IEnumerator typingCoroutine;
 
+    public Slider velocity;
+
     private void Start()
     {
         nextAro.SetActive(true);
@@ -50,7 +52,7 @@ public class MovementTutorial : MonoBehaviour
         // Puedes agregar lógica aquí si necesitas detener la animación de texto antes de que termine.
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -58,6 +60,7 @@ public class MovementTutorial : MonoBehaviour
 
             if (primeraro)
             {
+                velocity.value = 0;
                 StartTextAnimation("¡Bien!\nAhora usa los botones para moverte hacia los lados.");
                 finger.SetActive(false);
                 movementUI.SetActive(true);
@@ -65,6 +68,7 @@ public class MovementTutorial : MonoBehaviour
 
             if (segundoAro)
             {
+                velocity.value = 0;
                 StartTextAnimation("¡Muy Bien!\nAhora usa los botones para subir y bajar");
                 upDownButtons.SetActive(true);
             }
@@ -80,6 +84,7 @@ public class MovementTutorial : MonoBehaviour
                 StartTextAnimation("¡Excelente!\nAhora sabes navegar por el espacio.\nSigamos con tu entrenamiento");
                 Debug.Log("fin");
                 StartCoroutine(DelaySceneChange());
+
             }
         }
     }
@@ -118,11 +123,15 @@ public class MovementTutorial : MonoBehaviour
         {
             audioSource.Stop();
         }
+
+        
     }
 
     private IEnumerator DelaySceneChange()
     {
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(0);
+        
+            yield return new WaitForSeconds(15f);
+            SceneManager.LoadScene(2);
+        
     }
 }
