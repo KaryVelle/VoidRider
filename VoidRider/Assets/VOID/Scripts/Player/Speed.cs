@@ -10,12 +10,18 @@ public class Speed : PlayerSettings
     public Turbo turbo;
     public int turboMulti;
    
+    public ParticleSystem fast;
+    public ParticleSystem faster;
+    public ParticleSystem motores;
+    public ParticleSystem motores2;
     
     
 
 
    void Start()
     {
+        fast.Stop();
+        faster.Stop();
         mySlider = GetComponent<Slider>();
         if (mySlider == null) Debug.Log("No Slider");
     }
@@ -34,6 +40,32 @@ public class Speed : PlayerSettings
             relativeFwd = cabinRigidbody.transform.TransformDirection(Vector3.forward);
         
             cabinRigidbody.velocity = relativeFwd * speed * maxSpeed;
+        }
+        
+        if (speed>=0.3f)
+        {
+           fast.Play();
+           faster.Stop();
+        }
+        if (speed>=0.7f)
+        { 
+            fast.Stop();
+            faster.Play();
+        }
+
+        if (speed<=0.2f)
+        {
+            turbo.isTurbo = false;
+            fast.Stop();
+            faster.Stop();
+            motores.Stop();
+            motores2.Stop();
+        }
+
+        if (speed>0.2f)
+        {
+            motores.Play();
+            motores2.Play();
         }
        
     }
