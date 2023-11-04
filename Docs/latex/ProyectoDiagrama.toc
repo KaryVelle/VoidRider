@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Descripción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Requerimientos funcionales}{3}{section.2}%
+\contentsline {section}{\numberline {3}Requerimientos no funcionales}{3}{section.3}%
+\contentsline {section}{\numberline {4}Diagramas}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diagrama de Casos}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diagrama de clases}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Diagramas de Secuencia}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diagramas de flujo}{15}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Diagrama}{25}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Propuesta de Pantallas}{26}{section.5}%
+\contentsline {section}{\numberline {6}Identidad}{26}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Marca}{26}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Logo aplicación}{28}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Paleta de color}{28}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Tipografía}{29}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Prototipo en Figma}{29}{section.7}%
