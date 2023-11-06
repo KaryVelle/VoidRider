@@ -20,8 +20,7 @@ public class Speed : PlayerSettings
 
    void Start()
     {
-        fast.Stop();
-        faster.Stop();
+       
         mySlider = GetComponent<Slider>();
         if (mySlider == null) Debug.Log("No Slider");
     }
@@ -62,7 +61,7 @@ public class Speed : PlayerSettings
             motores2.Stop();
         }
 
-        if (speed>0.2f)
+        if (speed>0.1f)
         {
             motores.Play();
             motores2.Play();
