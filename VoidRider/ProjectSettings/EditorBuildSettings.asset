@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VOID/TutorialMove.unity
     guid: ea7f366a08b583b48b8e5eebbbd6d483
+  - enabled: 1
+    path: Assets/VOID/TutorialShoot.unity
+    guid: 8be1d3a014bfed24f801eeb8d691ec46
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9e83c514ea06670419098d64052eed5d, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 75d6d28b80eb5b848a44c7848609df9c, type: 2}
