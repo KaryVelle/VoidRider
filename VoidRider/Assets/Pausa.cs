@@ -7,12 +7,7 @@ public class Pausa : MonoBehaviour
 {
     private bool isPaused = false;
     public GameObject pauseWarn;
-
-    void Start()
-    {
-       
-        Time.timeScale = 1.0f;
-    }
+   
 
     public void TogglePause()
     {

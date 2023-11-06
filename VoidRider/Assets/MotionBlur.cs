@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class MotionBlur : MonoBehaviour
 {
-    public GameObject blur;
-    public bool on;
+    public GameObject targ;
 
     public void OnValueChanged(bool on)
     {
-        blur.SetActive(on);
+        targ.SetActive(on);
     }
 }
