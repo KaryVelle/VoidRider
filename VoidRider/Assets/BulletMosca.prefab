@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1211601020139392059}
   - component: {fileID: 4404865679870582130}
   m_Layer: 0
-  m_Name: BulletTriplets
+  m_Name: BulletMosca
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 499f0e81cad77404bae7dfa0b8465713, type: 2}
+  - {fileID: 2100000, guid: 66074aa9886ebf74388c79c92e43cff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 3
-  Damage: 0.5
+  Damage: 1
   Speed: 30
   RB: {fileID: 2254728179482448853}
   CreateAudio: {fileID: 4404865679870582130}
