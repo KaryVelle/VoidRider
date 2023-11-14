@@ -29,6 +29,11 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene("TutorialMove");
         Time.timeScale = 1;
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Play2");
+    }
     
     
 }

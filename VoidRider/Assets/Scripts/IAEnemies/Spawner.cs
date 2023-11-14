@@ -8,19 +8,18 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int desiredEnemys;
     private int[] positions = new int[] { 800, 800, 800 };
     public List<GameObject> enemies;
-    private int _index;
     void Start()
     {
-        
-        Generator();
+        Generator(enemy[0]);
+        Generator(enemy[1]);
+        Generator(enemy[2]);
     }
 
-    public void Generator()
+    public void Generator(GameObject spawnEnem)
     {
         for(int i =0; i < desiredEnemys; i++)
         {
-            _index = Random.Range(0, enemy.Length);
-            GameObject a = Instantiate(enemy[_index]) as GameObject;
+            GameObject a = Instantiate(spawnEnem) as GameObject;
             a.transform.position = new Vector3(Random.Range(-positions[0], positions[0]), 
                 Random.Range(-positions[1], positions[1]), 
                 Random.Range(-positions[2], positions[2]));

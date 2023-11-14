@@ -8,6 +8,7 @@ public class EnemyCounter : MonoBehaviour
 {
     public int numberOfEnemies;
     public Text enemyTxt;
+    public GameObject win;
     
 
     public void Update()
@@ -15,6 +16,10 @@ public class EnemyCounter : MonoBehaviour
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfEnemies = objectsWithTag.Length;
         enemyTxt.text = numberOfEnemies.ToString();
-      
+        if (objectsWithTag.Length == 0)
+        {
+            win.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }
