@@ -71,8 +71,8 @@ public class ShootTutorial : MonoBehaviour
         { 
             lastEnemyBool = false;
             StartTextAnimation("¡Eso cadete!\n¡Estas listx para embarcarte en esta peligrosa misión...!");
+            DelaySceneChange();
             lastEnemies.SetActive(true);
-            StartCoroutine(DelaySceneChange());
         }
     }
     
@@ -112,11 +112,9 @@ public class ShootTutorial : MonoBehaviour
         }
     }
 
-    private IEnumerator DelaySceneChange()
+    private void DelaySceneChange()
     {
-
-        yield return new WaitForSeconds(15f);
         SceneManager.LoadScene(0);
-
     }
+   
 }

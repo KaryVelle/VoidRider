@@ -82,8 +82,7 @@ public class MovementTutorial : MonoBehaviour
             if (aroFinal)
             {
                 StartTextAnimation("¡Excelente!\nAhora sabes navegar por el espacio.\nSigamos con tu entrenamiento");
-               DelaySceneChange();
-
+                DelaySceneChanger();
             }
         }
     }
@@ -126,11 +125,8 @@ public class MovementTutorial : MonoBehaviour
         
     }
 
-    private void DelaySceneChange()
+    private void DelaySceneChanger()
     {
-        
-          
-            SceneManager.LoadScene(2);
-        
+        SceneManager.LoadScene(2);
     }
 }
