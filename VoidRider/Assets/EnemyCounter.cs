@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EnemyCounter : MonoBehaviour
 {
     public int numberOfEnemies;
     public Text enemyTxt;
     public GameObject win;
+    public TextMeshProUGUI puntaje;
+    public TimerGame timer; 
     
 
     public void Update()
@@ -19,6 +22,7 @@ public class EnemyCounter : MonoBehaviour
         if (objectsWithTag.Length == 0)
         {
             win.SetActive(true);
+            puntaje.text = timer.timeToKeep.ToString();
             Time.timeScale = 0;
         }
     }
